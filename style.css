@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    background-image: linear-gradient(50deg, #fff650, #533de2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    font-family: "Playwrite DK Loopet", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1,h2{
+    font-family: "Playwrite DK Loopet", cursive;
+    color:#EDEDED;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.logo h1:hover{
+    color: #2b2842;
+    cursor: pointer;
+}
+.logo h2:hover{
+    color: #2b2842;
+    cursor: pointer;
+}
+.container{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 25px;
+    height: min-content;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header input{
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.header input::placeholder{
+    color: rgb(23, 21, 14);
+    padding: 10px;
+}
+
+.header input:hover{
+    background-color: rgb(201, 198, 198);
+}
+
+#search{
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+#search:hover{
+    background-color: rgb(201, 198, 198);
+}
+
+.main-content{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content img{
+    width: 60%;
+    margin-block: 20px;
+}
+
+.description{
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details{
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity, .wind{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 30px;
+}
+
+.wind{
+    margin-right: 30px;
+}
+
+.details i{
+    font-size: 30px;
+}
+
+.details .text{
+    margin-left: 10px;
+}
+
+.text span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.locationNotF{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.locationNotF h1{
+    color: grey;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.locationNotF img{
+    width: 80%;
+}
+
+@media screen and (max-width: 440px){
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 320px;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .humidity{
+        margin-right: 30px;
+    }
+    
+    .wind{
+        margin-left: 30px;
+    }
+}
